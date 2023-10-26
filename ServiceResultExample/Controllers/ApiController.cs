@@ -8,14 +8,14 @@ using ServiceResultExample.Services.Service3;
 namespace ServiceResultExample.Controllers;
 
 [ApiController]
-[Route("[controller]/[action]")]
-public class WeatherForecastController : ControllerBase
+[Route("api/[action]")]
+public class ApiController : ControllerBase
 {
     private readonly IService1 _service1;
     private readonly IService2 _service2;
     private readonly IService3 _service3;
 
-    public WeatherForecastController(IService1 service1, IService2 service2, IService3 service3)
+    public ApiController(IService1 service1, IService2 service2, IService3 service3)
     {
         _service1 = service1;
         _service2 = service2;
