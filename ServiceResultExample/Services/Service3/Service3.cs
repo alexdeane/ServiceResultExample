@@ -54,7 +54,7 @@ public class Service3 : IService3
         // Here we can directly return a tuple containing our success AND our error
         return (
             new WeatherForecast(),
-            new ServiceError()
+            new ServiceError(ErrorMessage: "error", ErrorType.Server)
         );
     }
 }

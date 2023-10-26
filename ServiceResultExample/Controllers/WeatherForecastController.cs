@@ -82,14 +82,12 @@ public class WeatherForecastController : ControllerBase
             return Ok(serviceResult.Result);
         }
 
-        var serviceError = serviceResult.Error.Value;
-
         // Result object is easy to create. Our error message is already predefined by the lower-level
         // code. We can be certain it is user-safe because it is not directly coming from an exception.
         //
         // Status code determination is a responsibility of the controller, which decouples protocl-specific
         // error information from your application core.
-        return BuildError(serviceError);
+        return BuildError(serviceResult.Error);
     }
 
     /// <summary>

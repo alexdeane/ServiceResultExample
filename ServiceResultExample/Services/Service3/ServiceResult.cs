@@ -8,7 +8,7 @@
 /// <param name="Error">The error object</param>
 /// <typeparam name="TResult">Result type</typeparam>
 /// <typeparam name="TError">Error type</typeparam>
-public record ServiceResult<TResult, TError>(TResult? Result = default, TError? Error = default)
+public record ServiceResult<TResult, TError>(TResult? Result = null, TError? Error = null) where TResult : class where TError : class
 {
     /// <summary>
     /// Implicit cast to allow returning an instance of <see cref="TError"/>

@@ -5,7 +5,7 @@
 /// </summary>
 /// <param name="ErrorMessage"></param>
 /// <param name="ErrorType"></param>
-public readonly record struct ServiceError(string ErrorMessage, ErrorType ErrorType);
+public record ServiceError(string ErrorMessage, ErrorType ErrorType);
 
 /// <summary>
 /// This enum simply indicates to the controller
