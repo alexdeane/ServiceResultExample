@@ -6,6 +6,6 @@ This project contains an example ASP.Net Core API with three controller actions.
 * `[GET] /api/Get2/` - Service returns naive wrapper object
 * `[GET] /api/Get3/` - Service returns sophisticated wrapper object
 
-Start at [WeatherForecastController](./ServiceResultExample/Controllers/WeatherForecastController.cs) and work your way through from `Get1()` down. Comments throughout the code explain the various error handling mechanisms and attempt to explain why the third is the most sophisticated.
+Start at [ApiController](./ServiceResultExample/Controllers/ApiController.cs) and work your way through from `Get1()` down. Comments throughout the code explain the various error handling mechanisms and attempt to explain why the third is the most sophisticated.
 
 Swagger page is available at `/swagger/index.html` if you want to debug through the code.
