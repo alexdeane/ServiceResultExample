@@ -1,4 +1,4 @@
-﻿namespace ServiceResultExample.Clients;
+﻿namespace ServiceResultExample.Client;
 
 /// <summary>
 /// This custom exception serves to wrap exceptions of other types

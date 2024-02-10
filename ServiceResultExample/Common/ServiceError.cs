@@ -1,4 +1,4 @@
-﻿namespace ServiceResultExample.Services;
+﻿namespace ServiceResultExample.Common;
 
 /// <summary>
 /// Common type for an error returned by a core service

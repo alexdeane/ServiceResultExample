@@ -1,4 +1,4 @@
-﻿namespace ServiceResultExample;
+﻿namespace ServiceResultExample.Common;
 
 /// <summary>
 /// Error model returned by the API when something goes wrong

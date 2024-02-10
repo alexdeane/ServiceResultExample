@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using ServiceResultExample.Common;
 
-namespace ServiceResultExample._Advanced;
+namespace ServiceResultExample.Example3_Advanced;
 
 [ApiController]
 [Route("api/[action]")]

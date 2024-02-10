@@ -1,4 +1,4 @@
-﻿namespace ServiceResultExample.Clients;
+﻿namespace ServiceResultExample.Client;
 
 /// <summary>
 /// Fake client that returns random data. Let's pretend that this

@@ -1,7 +1,7 @@
-using ServiceResultExample.Clients;
-using ServiceResultExample.Services.Service1;
-using ServiceResultExample.Services.Service2;
-using ServiceResultExample.Services.Service3;
+using ServiceResultExample.Client;
+using ServiceResultExample.Example1_Beginner;
+using ServiceResultExample.Example2_Intermediate;
+using ServiceResultExample.Example3_Advanced;
 
 var builder = WebApplication.CreateBuilder(args);
 

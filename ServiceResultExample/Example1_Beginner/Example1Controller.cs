@@ -1,21 +1,20 @@
 using Microsoft.AspNetCore.Mvc;
-using ServiceResultExample.Clients;
-using ServiceResultExample.Services;
-using ServiceResultExample.Services.Service1;
-using ServiceResultExample.Services.Service2;
-using ServiceResultExample.Services.Service3;
+using ServiceResultExample.Client;
+using ServiceResultExample.Common;
+using ServiceResultExample.Example2_Intermediate;
+using ServiceResultExample.Example3_Advanced;
 
-namespace ServiceResultExample.Controllers;
+namespace ServiceResultExample.Example1_Beginner;
 
 [ApiController]
 [Route("api/[action]")]
-public class exampleController : ControllerBase
+public class Example1Controller : ControllerBase
 {
     private readonly IService1 _service1;
     private readonly IService2 _service2;
     private readonly IService3 _service3;
 
-    public exampleController(IService1 service1, IService2 service2, IService3 service3)
+    public Example1Controller(IService1 service1, IService2 service2, IService3 service3)
     {
         _service1 = service1;
         _service2 = service2;
@@ -30,7 +29,7 @@ public class exampleController : ControllerBase
     /// </summary>
     /// <returns></returns>
     [HttpGet]
-    public async Task<IActionResult> Get1(IService1 service1)
+    public async Task<IActionResult> Get1()
     {
         try
         {

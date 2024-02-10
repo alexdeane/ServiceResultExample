@@ -1,4 +1,4 @@
-namespace ServiceResultExample.Clients;
+namespace ServiceResultExample.Client;
 
 public class WeatherForecast
 {

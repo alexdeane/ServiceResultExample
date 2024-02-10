@@ -1,6 +1,6 @@
 ﻿using ServiceResultExample.Client;
 
-namespace ServiceResultExample.Example1;
+namespace ServiceResultExample.Example1_Beginner;
 
 /// <summary>
 /// This service simply allows exceptions to propagate
@@ -19,7 +19,7 @@ public class Service1 : IService1
         _client = client;
     }
 
-    // In the very simply case shown here,
+    // In the very simple case shown here,
     // you would be correct to say that this service can be deleted.
     // However, in a real world scenario the service may be responsible
     // for invoking multiple clients, databases, etc.

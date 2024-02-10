@@ -1,6 +1,6 @@
 ﻿using ServiceResultExample.Common;
 
-namespace ServiceResultExample.Example2;
+namespace ServiceResultExample.Example2_Intermediate;
 
 /// <summary>
 /// Small, naive result wrapper

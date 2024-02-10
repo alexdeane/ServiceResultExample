@@ -1,4 +1,4 @@
-﻿namespace ServiceResultExample._Advanced;
+﻿namespace ServiceResultExample.Example3_Advanced;
 
 /// <summary>
 /// Abstraction used to return a result, error, or both
@@ -22,7 +22,7 @@ public record ServiceResult<TResult, TError>(TResult? Result = null, TError? Err
 
     /// <summary>
     /// Implicit cast to allow returning a Tuple of the form (<see cref="TResult"/>, <see cref="TError"/>).
-    /// This is to support partial success scenarios
+    /// <remarks>This is to support partial success scenarios</remarks>
     /// </summary>
     public static implicit operator ServiceResult<TResult, TError>(ValueTuple<TResult, TError> tuple)
         => new(Result: tuple.Item1, Error: tuple.Item2);
@@ -43,8 +43,8 @@ public record ServiceResult<TResult, TError>(TResult? Result = null, TError? Err
 
     /// <summary>
     /// Convenience method allowing one to switch on the result and supply
-    /// handlers for different cases and return values. This override allows handlers
-    /// to return a value.
+    /// handlers for different cases and return values
+    /// <remarks>This override allows handlers to return a value.</remarks>
     /// </summary>
     /// <param name="successHandler">A handler to be invoked when the result is a success</param>
     /// <param name="errorHandler">A handler to be invoked when the result is an error</param>
@@ -70,8 +70,10 @@ public record ServiceResult<TResult, TError>(TResult? Result = null, TError? Err
     {
         if (Result is not null && Error is not null)
             partialSuccessHandler(Result, Error);
+
         else if (Result is not null)
             successHandler(Result);
+
         else errorHandler(Error!);
     }
 

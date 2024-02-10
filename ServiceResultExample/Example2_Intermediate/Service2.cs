@@ -1,7 +1,7 @@
 ﻿using ServiceResultExample.Client;
 using ServiceResultExample.Common;
 
-namespace ServiceResultExample.Example2;
+namespace ServiceResultExample.Example2_Intermediate;
 
 /// <summary>
 /// A better solution, but still not quite there. This

@@ -1,7 +1,7 @@
 ﻿using ServiceResultExample.Client;
 using ServiceResultExample.Common;
 
-namespace ServiceResultExample.Example3;
+namespace ServiceResultExample.Example3_Advanced;
 
 /// <summary>
 /// The third service uses a much better result wrapper
