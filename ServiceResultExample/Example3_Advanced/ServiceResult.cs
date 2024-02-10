@@ -1,4 +1,4 @@
-﻿namespace ServiceResultExample.Services.Service3;
+﻿namespace ServiceResultExample._Advanced;
 
 /// <summary>
 /// Abstraction used to return a result, error, or both

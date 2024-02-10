@@ -9,13 +9,13 @@ namespace ServiceResultExample.Controllers;
 
 [ApiController]
 [Route("api/[action]")]
-public class ApiController : ControllerBase
+public class exampleController : ControllerBase
 {
     private readonly IService1 _service1;
     private readonly IService2 _service2;
     private readonly IService3 _service3;
 
-    public ApiController(IService1 service1, IService2 service2, IService3 service3)
+    public exampleController(IService1 service1, IService2 service2, IService3 service3)
     {
         _service1 = service1;
         _service2 = service2;
@@ -30,7 +30,7 @@ public class ApiController : ControllerBase
     /// </summary>
     /// <returns></returns>
     [HttpGet]
-    public async Task<IActionResult> Get1()
+    public async Task<IActionResult> Get1(IService1 service1)
     {
         try
         {

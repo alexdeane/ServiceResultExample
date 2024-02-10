@@ -1,4 +1,6 @@
-﻿namespace ServiceResultExample.Services.Service2;
+﻿using ServiceResultExample.Common;
+
+namespace ServiceResultExample.Example2;
 
 /// <summary>
 /// Small, naive result wrapper

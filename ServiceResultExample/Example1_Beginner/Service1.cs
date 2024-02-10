@@ -1,6 +1,6 @@
-﻿using ServiceResultExample.Clients;
+﻿using ServiceResultExample.Client;
 
-namespace ServiceResultExample.Services.Service1;
+namespace ServiceResultExample.Example1;
 
 /// <summary>
 /// This service simply allows exceptions to propagate
